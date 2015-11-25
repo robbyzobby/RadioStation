@@ -1,0 +1,5 @@
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station Library\obj\Debug\Radio Station Library.csprojResolveAssemblyReference.cache
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\bin\Debug\Radio Station Library.dll
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\bin\Debug\Radio Station Library.pdb
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\obj\Debug\Radio Station Library.dll
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\obj\Debug\Radio Station Library.pdb

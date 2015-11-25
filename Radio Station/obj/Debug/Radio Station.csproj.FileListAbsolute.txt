@@ -1,0 +1,34 @@
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\bin\Debug\Radio Station.exe.config
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\bin\Debug\Radio Station.exe
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\bin\Debug\Radio Station.pdb
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio Station.csprojResolveAssemblyReference.cache
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\MainWindow.baml
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\MainWindow.g.cs
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\App.g.cs
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio Station_MarkupCompile.cache
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio Station.g.resources
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio_Station.Properties.Resources.resources
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio Station.csproj.GenerateResource.Cache
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio Station.exe
+F:\Мои документы\Visual Studio 2013\Projects\Radio Station\Radio Station\obj\Debug\Radio Station.pdb
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\bin\Debug\Radio Station.exe.config
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio Station.exe
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio Station.pdb
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio Station.csprojResolveAssemblyReference.cache
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\MainWindow.baml
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\MainWindow.g.cs
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\App.g.cs
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio Station_MarkupCompile.cache
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio Station.g.resources
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio_Station.Properties.Resources.resources
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\obj\Debug\Radio Station.csproj.GenerateResource.Cache
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\bin\Debug\Radio Station.exe
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\bin\Debug\Radio Station.pdb
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\bin\Debug\Radio Station Library.dll
+C:\Users\kiril_000\Downloads\Radio Station\Radio Station\bin\Debug\Radio Station Library.pdb
+C:\Users\Anton\Desktop\Radio_Station\Radio Station\Radio Station\bin\Debug\Radio Station.exe.config
+C:\Users\Anton\Desktop\Radio_Station\Radio Station\Radio Station\obj\Debug\Radio Station.exe
+C:\Users\Anton\Desktop\Radio_Station\Radio Station\Radio Station\obj\Debug\Radio Station.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Debug\Radio Station.exe.config
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.exe
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.pdb
