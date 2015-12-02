@@ -9,7 +9,7 @@ namespace Radio_Station_Library
 {
     public class MusicPlayer
     {
-        [DllImport("winmm.dll")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Portability", "CA1901:PInvokeDeclarationsShouldBePortable", MessageId = "return"), DllImport("winmm.dll")]
         private static extern long mciSendString(string lpstrCommand, StringBuilder lpstrReturnString, int uReturnLength, int hwndCallback);
 
         public void Open(string file)
