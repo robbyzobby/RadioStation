@@ -12,14 +12,14 @@
          <Members>
           <Member Name="#Play()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:52:50Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="f:\Мои документы\GitHub\RadioStation\Radio Station Library" File="MusicPlayer.cs" Line="24">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicPlayer.Play()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Stop()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:52:50Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="f:\Мои документы\GitHub\RadioStation\Radio Station Library" File="MusicPlayer.cs" Line="30">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicPlayer.Stop()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
@@ -30,7 +30,7 @@
          <Members>
           <Member Name="#Stations" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2015-12-02 23:52:50Z" FixCategory="Breaking">
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="Breaking">
              <Issue Certainty="90" Level="Warning">Consider making 'Station.Stations' non-public or a constant.</Issue>
             </Message>
            </Messages>
@@ -41,7 +41,7 @@
          <Members>
           <Member Name="#Tracks" Kind="Field" Static="True" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-02 23:52:50Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'Track.Tracks' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
@@ -54,7 +54,7 @@
        <Types>
         <Type Name="Stream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
          <Messages>
-          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-12-02 23:52:50Z" FixCategory="NonBreaking">
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="NonBreaking">
            <Issue Certainty="75" Level="Warning">'Stream' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
           </Message>
          </Messages>

@@ -1,5 +1,5 @@
 #define   Name       "RadioStation"
-#define   Version    GetFileVersion("..\..\RadioStation\bin\Release\RadioStation.exe")
+#define   Version    GetFileVersion("..\..\..\RadioStation\bin\Release\RadioStation.exe")
 #define   Publisher  "Anton"
 #define   URL        "http://antonde@ukr.net"
 #define   ExeName    "RadioStation.exe"
@@ -33,6 +33,6 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl";
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\..\RadioStation\bin\Release\RadioStation.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\..\..\Radio Station\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\..\RadioStation\bin\Release\RadioStation.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\..\..\RadioStation\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
