@@ -9,10 +9,13 @@ namespace Radio_Station_Library
 {
     public class VoicePlaying : Connection
     {
+        MusicPlayer mp = new MusicPlayer();        
+            
         public override void Connect(Station station, Client client)
         {
-            
+            this.mp.Stop();
         }
+
         public override string ToString()
         {
             return GetType().ToString();

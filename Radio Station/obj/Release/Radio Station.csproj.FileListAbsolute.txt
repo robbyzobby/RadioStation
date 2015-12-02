@@ -1,0 +1,15 @@
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Release\Radio Station.exe.config
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Release\Radio Station.exe
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Release\Radio Station.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Release\Radio Station Library.dll
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Release\Radio Station Library.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio Station.csprojResolveAssemblyReference.cache
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\MainWindow.baml
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\MainWindow.g.cs
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\App.g.cs
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio Station_MarkupCompile.cache
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio Station.g.resources
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio_Station.Properties.Resources.resources
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio Station.csproj.GenerateResource.Cache
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio Station.exe
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Release\Radio Station.pdb

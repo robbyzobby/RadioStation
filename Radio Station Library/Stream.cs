@@ -8,6 +8,5 @@ namespace Radio_Station_Library.Strategy
 {
     class Stream
     {
-
     }
 }

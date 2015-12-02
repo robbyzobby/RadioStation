@@ -3,3 +3,8 @@ C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\bin\Debug\Radio
 C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\bin\Debug\Radio Station Library.pdb
 C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\obj\Debug\Radio Station Library.dll
 C:\Users\kiril_000\Downloads\Radio Station\Radio Station Library\obj\Debug\Radio Station Library.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station Library\bin\Debug\Radio Station Library.dll
+F:\Мои документы\GitHub\RadioStation\Radio Station Library\bin\Debug\Radio Station Library.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station Library\obj\Debug\Radio Station Library.csprojResolveAssemblyReference.cache
+F:\Мои документы\GitHub\RadioStation\Radio Station Library\obj\Debug\Radio Station Library.dll
+F:\Мои документы\GitHub\RadioStation\Radio Station Library\obj\Debug\Radio Station Library.pdb

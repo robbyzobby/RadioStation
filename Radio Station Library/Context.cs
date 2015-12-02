@@ -10,18 +10,18 @@ namespace Radio_Station_Library
     {
         Connection connection;
 
-        Client firstclient = new Client( "John", 2);
+        Client firstclient = new Client("John", 2);
+
         Station mystation = new Station("Africa");
         
-
-        public Context( Connection connection)
+        public Context(Connection connection)
         {
             this.connection = connection;
         }
 
         public void TutnOn()
         {
-            connection.Connect(mystation, firstclient);
+            this.connection.Connect(this.mystation, this.firstclient);
         }
     }
 }

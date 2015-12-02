@@ -32,3 +32,15 @@ C:\Users\Anton\Desktop\Radio_Station\Radio Station\Radio Station\obj\Debug\Radio
 F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Debug\Radio Station.exe.config
 F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.exe
 F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Debug\Radio Station.exe
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Debug\Radio Station.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Debug\Radio Station Library.dll
+F:\Мои документы\GitHub\RadioStation\Radio Station\bin\Debug\Radio Station Library.pdb
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.csprojResolveAssemblyReference.cache
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\MainWindow.baml
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\MainWindow.g.cs
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\App.g.cs
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station_MarkupCompile.cache
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.g.resources
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio_Station.Properties.Resources.resources
+F:\Мои документы\GitHub\RadioStation\Radio Station\obj\Debug\Radio Station.csproj.GenerateResource.Cache

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Radio_Station_Library;
+
 namespace Radio_Station
 {
     /// <summary>
@@ -20,11 +21,26 @@ namespace Radio_Station
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+      public MainWindow()
+        {   
+            this.InitializeComponent();
+        }
+
+        private void Play_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
             var musicplaying = new MusicPlaying();
-            var contex = new Context (musicplaying);
+            var contex = new Context(musicplaying);
+            contex.TutnOn();
+        }
+
+        private void Pause_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void Voice_Click(object sender, RoutedEventArgs e)
+        {
+            var voiceplaying = new VoicePlaying();
+            var contex = new Context(voiceplaying);
             contex.TutnOn();
         }
     }

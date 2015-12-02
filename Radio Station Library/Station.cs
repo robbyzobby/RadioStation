@@ -9,25 +9,29 @@ namespace Radio_Station_Library
     public class Station
     {
         public static Dictionary<Guid, Station> Stations = new Dictionary<Guid, Station>();
+
         public Guid Id { get; set; }
+
         public string Name { get; set; }
+
         public StationState State { get; set; }
+
         public Station()
         {
-            Name = String.Empty;
-            Id = Guid.NewGuid();
-            State = StationState.Ready;
+            this.Name = string.Empty;
+            this.Id = Guid.NewGuid();
+            this.State = StationState.Ready;
         }
 
         public Station(string name)
         {
-            Id = Guid.NewGuid();
-            State = StationState.Ready;
+            this.Id = Guid.NewGuid();
+            this.State = StationState.Ready;
         }
-
+        
         public override string ToString()
         {
-            return  Name + State.ToString();
+            return this.Name + this.State.ToString();
         }
 
         public enum StationState
