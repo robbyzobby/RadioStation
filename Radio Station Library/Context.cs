@@ -19,6 +19,7 @@ namespace Radio_Station_Library
             this.connection = connection;
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Tutn")]
         public void TutnOn()
         {
             this.connection.Connect(this.mystation, this.firstclient);

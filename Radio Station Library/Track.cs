@@ -8,7 +8,7 @@ namespace Radio_Station_Library
 {
     public class Track
     {
-        public static Dictionary<Guid, Client> Tracks = new Dictionary<Guid, Client>();
+        static Dictionary<Guid, Client> Tracks = new Dictionary<Guid, Client>();
 
         public Guid Id { get; set; }
 
@@ -16,7 +16,7 @@ namespace Radio_Station_Library
 
         public string Artist { get; set; }
 
-        public string Path { private get; set; }
+        public string Path { get; set; }
 
          public Track()
         {
@@ -36,7 +36,7 @@ namespace Radio_Station_Library
 
         public override string ToString()
         {
-            return this.Title + this.Artist;
+            return this.Title + this.Artist + this.Path;
         }
     }
 }

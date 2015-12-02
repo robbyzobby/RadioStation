@@ -25,6 +25,7 @@ namespace Radio_Station_Library
 
         public Station(string name)
         {
+            this.Name = name;
             this.Id = Guid.NewGuid();
             this.State = StationState.Ready;
         }

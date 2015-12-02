@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="F:\Мои документы\GitHub\RadioStation\Radio Station Library\bin\Release\Radio Station Library.dll">
+   <Modules>
+    <Module Name="radio station library.dll">
+     <Namespaces>
+      <Namespace Name="Radio_Station_Library">
+       <Types>
+        <Type Name="MusicPlayer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Play()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:45:08Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="f:\Мои документы\GitHub\RadioStation\Radio Station Library" File="MusicPlayer.cs" Line="24">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicPlayer.Play()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Stop()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:45:08Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="f:\Мои документы\GitHub\RadioStation\Radio Station Library" File="MusicPlayer.cs" Line="30">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicPlayer.Stop()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Station" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Stations" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2015-12-02 23:45:08Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'Station.Stations' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Track" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Tracks" Kind="Field" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-02 23:45:08Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Track.Tracks' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Radio_Station_Library.Strategy">
+       <Types>
+        <Type Name="Stream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-12-02 23:45:08Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'Stream' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
+   <Name>Non-constant fields should not be visible</Name>
+   <Description>Static fields should be constant unless you carefully manage access to the field using locks. Using static variables without making them thread safe can compromise execution state. This rule applies to managed code libraries. If the analyzed assembly is an application, it is usually safe to exclude violations of this rule.</Description>
+   <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182353.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+ <Exceptions>
+  <Exception Keyword="CA0001" Kind="Engine">
+   <Type>Phx.FatalError</Type>
+   <ExceptionMessage>Exception of type 'Phx.FatalError' was thrown.</ExceptionMessage>
+   <StackTrace>   at Phx.FatalError.Dispatch()
+   at Phx.Logging.Diagnostics.DiagnosticMessage.LogMessage(Severity severity, DiagnosticInfo diagnosticInfo, SourceContext sourceContext, String descriptionString)
+   at Phx.PE.PEUtilities.UserError(String infoMessage)
+   at Phx.Pdb.ReaderImplementation.Open(Boolean loadTypeOnly)
+   at Phx.PEModuleUnit.LoadPdb()
+   at Phx.PE.ReaderPhase.CheckSymbolicInformation()
+   at Phx.PEModuleUnit.LoadGlobalSymbols()
+   at Phx.PEModuleUnit.LoadEncodedIRUnitList()
+   at Phx.PEModuleUnit.GetEnumerableContributionUnit(ContributionUnitEnumerationKind contributionUnitEnumerationKind)
+   at Phx.PEModuleUnit.GetEnumerableContributionUnit()
+   at Microsoft.FxCop.Engines.Phoenix.PreScanPass.GetFunctionUnits(PEModuleUnit peModuleUnit)
+   at Microsoft.FxCop.Engines.Phoenix.PreScanPass.Execute(ModuleUnit moduleUnit)
+   at Phx.Passes.Pass.DoPass(ModuleUnit moduleUnit)
+   at Phx.Passes.PassList.DoPassList(ModuleUnit moduleUnit)
+   at Microsoft.FxCop.Engines.Phoenix.PhoenixAnalysisEngine.Host.ExecutePasses(PEModuleUnit peModuleUnit)
+   at Microsoft.FxCop.Engines.Phoenix.PhoenixAnalysisEngine.AnalyzeInternal()
+   at Microsoft.FxCop.Engines.Phoenix.PhoenixAnalysisEngine.Analyze()
+   at Microsoft.FxCop.Common.EngineManager.Analyze(Project project, Boolean verboseOutput)</StackTrace>
+  </Exception>
+ </Exceptions>
+</FxCopReport>

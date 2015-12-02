@@ -17,9 +17,7 @@ namespace Radio_Station_Library
         public int Port { get; set; }
 
         public string Email { get; set; }
-
-        public string Password { private get; set; }
-        
+                
         public ClientState State { get; set; }
 
         public Client()
@@ -32,6 +30,7 @@ namespace Radio_Station_Library
 
         public Client(string name, int port)
         {
+            this.Name = name;
             this.Id = Guid.NewGuid();
             this.Port = port;
             this.State = ClientState.Online;
