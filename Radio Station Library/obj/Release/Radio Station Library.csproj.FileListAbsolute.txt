@@ -3,3 +3,4 @@ F:\Мои документы\GitHub\RadioStation\Radio Station Library\bin\Relea
 F:\Мои документы\GitHub\RadioStation\Radio Station Library\obj\Release\Radio Station Library.dll
 F:\Мои документы\GitHub\RadioStation\Radio Station Library\obj\Release\Radio Station Library.pdb
 F:\Мои документы\GitHub\RadioStation\Radio Station Library\bin\Release\Radio Station Library.dll.CodeAnalysisLog.xml
+F:\Мои документы\GitHub\RadioStation\Radio Station Library\obj\Release\Radio Station Library.csprojResolveAssemblyReference.cache

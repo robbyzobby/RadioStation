@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Radio_Station_Library.Strategy
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1812:AvoidUninstantiatedInternalClasses")]
     class Stream
     {
     }

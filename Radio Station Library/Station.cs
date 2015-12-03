@@ -8,7 +8,8 @@ namespace Radio_Station_Library
 {
     public class Station
     {
-        public static Dictionary<Guid, Station> Stations = new Dictionary<Guid, Station>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        static Dictionary<Guid, Station> Stations = new Dictionary<Guid, Station>();
 
         public Guid Id { get; set; }
 

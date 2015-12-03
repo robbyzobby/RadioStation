@@ -10,54 +10,14 @@
        <Types>
         <Type Name="MusicPlayer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Members>
-          <Member Name="#Play()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+          <Member Name="#MciSendString(System.String,System.Text.StringBuilder,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="DependsOnFix">
-             <Issue Certainty="95" Level="Warning" Path="f:\Мои документы\GitHub\RadioStation\Radio Station Library" File="MusicPlayer.cs" Line="24">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicPlayer.Play()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
-            </Message>
-           </Messages>
-          </Member>
-          <Member Name="#Stop()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
-           <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="DependsOnFix">
-             <Issue Certainty="95" Level="Warning" Path="f:\Мои документы\GitHub\RadioStation\Radio Station Library" File="MusicPlayer.cs" Line="30">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicPlayer.Stop()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            <Message TypeName="PInvokeEntryPointsShouldExist" Category="Microsoft.Interoperability" CheckId="CA1400" Status="Active" Created="2015-12-03 09:20:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning">Correct the declaration of 'MusicPlayer.MciSendString(string, StringBuilder, int, int)' so that it correctly points to an existing entry point in 'winmm.dll'. The unmanaged entry point name currently linked to is MciSendString.</Issue>
             </Message>
            </Messages>
           </Member>
          </Members>
-        </Type>
-        <Type Name="Station" Kind="Class" Accessibility="Public" ExternallyVisible="True">
-         <Members>
-          <Member Name="#Stations" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
-           <Messages>
-            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="Breaking">
-             <Issue Certainty="90" Level="Warning">Consider making 'Station.Stations' non-public or a constant.</Issue>
-            </Message>
-           </Messages>
-          </Member>
-         </Members>
-        </Type>
-        <Type Name="Track" Kind="Class" Accessibility="Public" ExternallyVisible="True">
-         <Members>
-          <Member Name="#Tracks" Kind="Field" Static="True" Accessibility="Private" ExternallyVisible="False">
-           <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning">It appears that field 'Track.Tracks' is never used or is only ever assigned to. Use this field or remove it.</Issue>
-            </Message>
-           </Messages>
-          </Member>
-         </Members>
-        </Type>
-       </Types>
-      </Namespace>
-      <Namespace Name="Radio_Station_Library.Strategy">
-       <Types>
-        <Type Name="Stream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
-         <Messages>
-          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-12-02 23:57:46Z" FixCategory="NonBreaking">
-           <Issue Certainty="75" Level="Warning">'Stream' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
-          </Message>
-         </Messages>
         </Type>
        </Types>
       </Namespace>
@@ -67,45 +27,15 @@
   </Target>
  </Targets>
  <Rules>
-  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
-   <Name>Avoid uninstantiated internal classes</Name>
-   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
-   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+  <Rule TypeName="PInvokeEntryPointsShouldExist" Category="Microsoft.Interoperability" CheckId="CA1400">
+   <Name>P/Invoke entry points should exist</Name>
+   <Description>Methods decorated with the DllImport attribute should point to existing unmanaged entry points. There is no compile-time check to ensure that methods decorated with the DllImport attribute actually exist in the referenced unmanaged dll. In the event that an entry point does not exist or the specified argument list is not correct, a runtime exception will be generated.</Description>
+   <Resolution Name="Default">Correct the declaration of {0} so that it correctly points to an existing entry point in {1}. The unmanaged entry point name currently linked to is {2}.</Resolution>
    <Owner />
-   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
+   <Url>http://msdn.microsoft.com/library/ms182208.aspx</Url>
    <Email>[none]</Email>
-   <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="12.0.0.0" />
-  </Rule>
-  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
-   <Name>Avoid unused private fields</Name>
-   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
-   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
-   <Owner />
-   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
-   <Email>[none]</Email>
-   <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="12.0.0.0" />
-  </Rule>
-  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
-   <Name>Mark members as static</Name>
-   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
-   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
-   <Owner />
-   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
-   <Email>[none]</Email>
-   <MessageLevel Certainty="95">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="12.0.0.0" />
-  </Rule>
-  <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
-   <Name>Non-constant fields should not be visible</Name>
-   <Description>Static fields should be constant unless you carefully manage access to the field using locks. Using static variables without making them thread safe can compromise execution state. This rule applies to managed code libraries. If the analyzed assembly is an application, it is usually safe to exclude violations of this rule.</Description>
-   <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
-   <Owner />
-   <Url>http://msdn.microsoft.com/library/ms182353.aspx</Url>
-   <Email>[none]</Email>
-   <MessageLevel Certainty="90">Warning</MessageLevel>
-   <File Name="usagerules.dll" Version="12.0.0.0" />
+   <MessageLevel Certainty="50">CriticalWarning</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="12.0.0.0" />
   </Rule>
  </Rules>
  <Localized>
