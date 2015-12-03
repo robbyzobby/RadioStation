@@ -1,5 +1,5 @@
 #define   Name       "RadioStation"
-#define   Version    0.0.1
+#define   Version    "0.0.1"
 #define   Publisher  "Anton"
 #define   URL        "http://antonde@ukr.net"
 #define   ExeName    "RadioStation.exe"
@@ -19,7 +19,7 @@ AppUpdatesURL={#URL}
 DefaultDirName={pf}\{#Name}
 DefaultGroupName={#Name}
 
-OutputDir=F:\radio\test-setup
+OutputDir=..\..\..\test-setup
 OutputBaseFileName={#Name}-{#Version}
 
 Compression=lzma
@@ -33,6 +33,6 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl";
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\..\..\RadioStation\bin\Release\RadioStation.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\..\..\RadioStation\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\..\Radio Station\bin\Release\Radio Station.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\..\..\Radio Station\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
