@@ -1,5 +1,5 @@
 #define   Name       "RadioStation"
-#define   Version    GetFileVersion("..\..\..\RadioStation\bin\Release\RadioStation.exe")
+#define   Version    0.0.1
 #define   Publisher  "Anton"
 #define   URL        "http://antonde@ukr.net"
 #define   ExeName    "RadioStation.exe"
@@ -9,7 +9,7 @@
 AppId = {{4277ECF3-4AA0-491F-AF0D-F58173FDB9EA}
 
 AppName={#Name}
-AppVersion={#Version}
+AppVersion= {#Version}
 AppPublisher={#Publisher}
 AppPublisherURL={#URL}
 AppSupportURL={#URL}
